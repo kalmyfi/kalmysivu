@@ -1,103 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Keywords" content="kalmy, kalajoen metsästysyhdistys, " />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Kalmy</title>
+  </head>
 
+  <body>
+    <div class="site">
+      <nav>
+        <ul id="sidebar" class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30px"
+                viewBox="0 -960 960 960"
+                width="30px"
+                fill="#000000"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="kuvia.html">Kuvia</a></li>
+          <li><a href="kauristilasto.html">Kauristilasto</a></li>
+          <li><a href="hirvitilasto.html">Hirvitilasto</a></li>
+          <li><a href="maja.html">Metsästysmaja</a></li>
+          <li><a href="saannot.html">Säännöt</a></li>
+          <li><a href="jaseneksi.html">Jäseneksi</a></li>
+          <li><a href="vieraskortit.html">Vieraskortit</a></li>
+          <li><a href="koemaastot.html">Koemaastot</a></li>
+        </ul>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li class="hideOnMobile"><a href="kuvia.html">Kuvia</a></li>
+          <li class="hideOnMobile">
+            <a href="kauristilasto.html">Kauristilasto</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="hirvitilasto.html">Hirvitilasto</a>
+          </li>
+          <li class="hideOnMobile"><a href="maja.html">Metsästysmaja</a></li>
+          <li class="hideOnMobile"><a href="saannot.html">Säännöt</a></li>
+          <li class="hideOnMobile"><a href="jaseneksi.html">Jäseneksi</a></li>
+          <li class="hideOnMobile">
+            <a href="vieraskortit.html">Vieraskortit</a>
+          </li>
+          <li class="hideOnMobile"><a href="koemaastot.html">Koemaastot</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
+      <header>
+        <div class="container">
+          <h1>Kalajoen Metsästysyhdistys Ry</h1>
+        </div>
+      </header>
+      <p style="vertical-align: top">
+        Tervetuloa Kalajoen Metsästysyhdisty Ry:n sivuille. Kalajoen
+        Metsästysyhdisty Ry on perustettu vuonna 1937. Jäseniä on noin 330
+        henkilöä. Seuran metsästysalueeseen kuuluu noin xxxx hehtaaria maata.
+      </p>
+      <div class="box-container">
+        <div class="box">
+          <h3>Ajankohtaista</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat
+            vitae eos repellat praesentium nam deleniti esse voluptate amet
+            harum tenetur ullam dolorem neque omnis quam magni fuga,
+            exercitationem quas.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="box">
+          <h3>Maastovaraukset</h3>
+          <ul>
+            <li>21.9.2024 Poliisin ja rajan mestaruus</li>
+            <li>29.9.2024 PM-koe nartut</li>
+            <li>4.10.2024 AJOK,</li>
+            <li>23.10.2024 ?</li>
+            <li>23.11.2024 DREAJ PM-koe, Tuomas Laakko</li>
+            <li>6.12.2024 AJOK, Juha Manninen</li>
+            <li>27.12.2024 AJOK, Juha Manninen</li>
+            <li>28.2.2025 KV-erämiesjaot AJOK</li>
+          </ul>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="box">
+          <h3>Muuta</h3>
+          <ul>
+            <li>Kalmyn Oma riista aluetunnus 2447K495DF.</li>
+            <li>
+              Ilmoita suurpetojen näkö- ja jälkihavainnot suurpetoyhdysmiehille
+              Ville Vähäsarjalle 0505903585 tai Mika Männikölle 0503494526
+            </li>
+            <li>
+              Nuolukiviä löytyy lisää metsästysmajalta. Joka kiven ottaa ja
+              luontoon käyttää niin kiven paikan majan kartalla nastalla
+              näyttää!
+            </li>
+            <li>
+              Ampumapaikkamaksu 15 €/vuosi, poislukien Kalmyn jäsenet ja alle 15
+              vuotiaat ampumapaikan käyttäjät. Savikiekkoammunta haulikolla on
+              kielletty! Maksu tilille FI91 4912 6020 0077 83. Maksun viesti:
+              Ampumapaikkamaksu ja ampujan nimi.
+            </li>
+            <li>
+              Jos Oma riista palvelussa ei näy Omissa tiedoissa seurajäsenyyttä
+              ja haluat sen lisättävän, lähetä nimesi ja metsästäjänumerosi
+              Kalmyn Oma listan päivittäjille: Mika Männikkö puh. 050 349 4526
+              tai Juhani Kattilakoski puh. 050 533 5901.
+            </li>
+          </ul>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="box">4</div>
+      </div>
 
-  <meta charset=UTF-8> <title>Kalmy</title>
+      <footer id="footer">
+        <p>Kalajoen Metsästysyhdistys Ry</p>
+      </footer>
 
-  <meta name="Description" content="KalMyn nettisivut Tervetuloa!" />
-
-  
-  <meta name="Keywords" content="kalmy, kalajoen metsästysyhdistys, " />
-
-  
-  <meta name="Distribution" content="global" />
-
-  
-  <meta name="Creation_date" content="" />
-
-
-  
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen" /></head><body>
-<div id="wrap">
-<div id="header"><big><big><big><big><big><strong><img src="images/Tahtaa.jpg" style="width: 800px; height: 164px;" alt="" /></strong></big></big></big></big></big><big><big><big><big><big>
-<div align="center"><strong><var><br />
-</var></strong></div>
-</big></big></big></big></big></div>
-<div id="menu">
-<div id="menu">
-<div id="menu">
-<div id="menu">
-<div id="menu">
-<div id="menu">
-<ul>
-  <li><a href="index.html">Etusivu</a></li>
-  <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-  <li><a href="kuvia.html">Kuvia</a></li>
-  <li><a href="kauristilasto.html">Kauristilasto</a></li>
-  <li><a href="hirvitilasto.html">Hirvitilasto</a></li>
-  <li><a href="maja.html">Metsästysmaja</a></li>
-  <li><a href="saannot.html">Säännöt</a></li>
-  <li><a href="jaseneksi.html">Jäseneksi</a></li>
-  <li><a href="ilmoitustaulu.html">Ilmoitustaulu</a></li>
-  <li><a href="vieraskortit.html">Vieraskortit</a></li>
-  
-  <li><a href="jaostot.html">Jaostot</a></li>
-
-  <li><a href="tarinat.html">Erätarinat</a></li>
-  <li><a href="kokoukset%20ja%20asiakirjat.html">Kokoukset ja asiakirjat</a></li>
-  <li><a href="linkkeja.html">Linkkejä</a><a href="koemaastot.html">Koemaastot</a><br />
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="content"><div class="right"><br />
-<img style="width: 605px; height: 500px;" alt="" src="images/Metsastysmaja%20talvi.jpg" /><br /></div><div class="left"><br />
-<a href="images/emavasa.jpg"><img style="border: 0px solid ; width: 172px; height: 110px;" alt="" title="Emä ja vasa" src="images/emavasa.jpg" /></a><br />
-<table style="text-align: left; width: 182px; height: 113px;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top;">Tervetuloa&nbsp; Kalajoen
-Metsästys- yhdistyksen nettisivuille. Sivuilla voit tutustua seuraamme
-ja sen toimintaan. Viihtyisiä lukuhetkiä kuvien kera toivottaa <span style="text-decoration: underline;">KalMy Ry.</span><br />
-      </td>
-    </tr>
-  </tbody>
-</table>
-<span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: black;"><big><span style="color: black;" /></big></span></span></span></span></span></span><span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: black;"><big><span style="color: black;"><span style="color: red;"><br />
-</span></span></big></span></span></span></span></span></span><big><span style="color: red;"><big><big><span style="font-weight: bold;" /></big></big></span></big></span></small></span></span></span></span></span></span></span></span></span></big></span></span></span></span></span></span><big><span style="color: red;">
-<br>
-
-Tulevat maastovaraukset: <br>
-23.11.2024 DREAJ PM-koe MAASTO NRO 5<br>
-<br>
-Lisätiedot:    
- <a href=http://kalmy.fi/koemaastot.html>Koemaastot</a>
- <br><br>
-
-
-
-Päivitetty</span> 13.11.2024<br /><a href="hirvitilasto.html">Hirvitilasto</a><br>
-
-<a href="http://kalmy.fi/kauristilasto.html">Kauristilastot</a> </big><br />
-
-<span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: black;"><big><span style="color: black;"><span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: black;"><span style="color: red;"><span style="color: red;"><span style="color: black;"><span style="color: red;"><small><span style="color: black;"><big><span style="color: red;"><big><small style="color: black;"><br />
-<span style="color: red;" /></small><big><small><small><span style="color: black;"><br />
-</span></small></small></big></big></span></big></span></small>Katso rauhoitusalueet</span></span></span></span></span></span></span></span></span></big><a href="ilmoitustaulu.html"><br />
-<big><span style="color: red;"><span style="color: red;"><span style="color: black;"><small>
-</small></span><small><span style="color: black;" /></small><span style="color: black;"><span style="color: red;"><big><span style="color: black;" /></big></span></span></span></span></big></a><big><big><a target="_blank" href="https://kartta.paikkatietoikkuna.fi/published/fi/b94acba2-b3f6-4007-8e3b-1d7b0658067d">täältä.</a><a target="_blank" href="https://kartta.paikkatietoikkuna.fi/published/fi/b94acba2-b3f6-4007-8e3b-1d7b0658067d"> </a><br />
-</big></big></span><span style="color: black;"><br />
-<span style="color: red;"><big><big><span style="color: red;"><big><span style="color: red;"><span style="color: red;"><small><span style="color: red;"><small><small><span style="color: red;"><big><span style="color: red;" /></big></span></small></small></span></small></span></span></big></span></big></big></span><big><big><span style="color: red;"><span style="color: red;" /></span></big></big><span style="color: red;"><big><big><span style="color: red;"><big><span style="color: red;" /></big></span></big></big><span style="color: black;"><span style="color: red;"><big><big><span style="color: red;"><small><span style="color: black;" /></small></span></big></big></span><big><span style="color: red;" /></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="images/Etusivulta%20linkki.jpg"><img style="border: 0px solid ; width: 94px; height: 82px;" src="images/Etusivulla.gif" alt="" title="Klikkaa" /></a><br />
-</span></span></span></span></span></span></span></span></div>
-<div style="clear: both;"> </div>
-</div>
-</div>
-
-<div id="footer">
-</div>
-
-</body></html>
+      <script>
+        function showSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          sidebar.style.display = "flex";
+        }
+        function hideSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          sidebar.style.display = "none";
+        }
+      </script>
+    </div>
+  </body>
+</html>

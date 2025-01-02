@@ -1,1 +1,119 @@
-* {	margin: 0;	padding: 0;}body {background: #76685D;font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 12px;line-height: 20px;color: #222;}a {text-decoration: none;color: #99AECD;}a:hover {text-decoration: underline;color: #4F5D7F;}#wrap {margin: 20px auto 10px auto;width: 800px;background: #fff;padding: 10px;border: 5px solid #000;}#header {height: 160px;background: #554d42 url(images/ase12.jpg) no-repeat;}#header h1 { font-size: 50px;letter-spacing: -7px;padding: 17px 0 0 10px;color: #FF5500;}#header h1 a { color: #D1DDEF;text-decoration: none;font-weight: 600;letter-spacing: -7px;}#header h1 a:hover {color: #fff;}#menu {height: 60px;line-height: 30px;background: #76685D;}#menu ul {list-style-type: none;padding-left: 30px;}#menu ul li {display: block;float: left;}#menu ul li a {padding: 0 20px 0 0;text-decoration: none;font-weight: 600;font-size: 12px;color: #fff;}#menu ul li a:hover {color: #aaa;text-decoration: none;}#content {padding: 0 20px 20px 0;}.right {float: right;width: 600px;text-align: justify;padding-top: 5px;}.right h2 {font-size: 18px;font-weight: 100;padding: 15px 0 7px 0;}.right h2 a {text-decoration: none;}.right h2 a:hover {}.left {float: left;width: 160px;padding-top: 10px;}.left h2 {margin: 10px 0 0 0;padding-left: 10px;height: 24px;line-height: 24px;color: #7988AF;font-size: 15px;}.left ul {padding: 10px 0 15px 30px;list-style-type: square;color: #99AECD;}.left ul li a {text-decoration: none;font-weight: 600;}.left ul li a:hover {}#footer {text-align: center;font-size: 11px;color: #aaa;}#footer a { color: #aaa; }#footer a:hover { color: #111; }
+.site {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f0f0f0;
+}
+header{
+    background-image: url("images/kalmylogo.png");
+    background-color: #f0f0f0;
+    text-align: center
+}
+.container{
+    background-color: rgb(69, 39, 39);
+    background-image: url("images/maisema.jpeg");
+    background-size: cover;
+    background-position: 70%;
+    background-blend-mode: lighten;
+    text-decoration: none;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+nav{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2)
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+nav a:hover{
+    background-color: rgb(157, 157, 157);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(221, 221, 221, 0.112);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0,2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1px;
+}
+.box{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+footer{
+    padding: 0px;
+    background-color: rgb(128, 128, 128);
+    position: relative;
+    height: 100px;
+    margin-top: 100px;
+    clear: both;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
